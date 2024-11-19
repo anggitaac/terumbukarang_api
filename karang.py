@@ -10,7 +10,8 @@ CORS(app)  # Aktifkan CORS setelah app dibuat
 
 
 # Load model dengan format .keras
-model = tf.keras.models.load_model('https://github.com/anggitaac/terumbukarang_api/releases/download/karang/karang.keras')
+MODEL_URL = "https://github.com/anggitaac/terumbukarang_api/releases/download/karang/karang.keras"
+MODEL_PATH = "karang.keras"
 
 # Fungsi untuk memproses gambar
 def preprocess_image(image_data):
